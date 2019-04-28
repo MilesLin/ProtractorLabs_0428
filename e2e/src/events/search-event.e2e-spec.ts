@@ -1,6 +1,6 @@
 import { browser, by, element, ElementFinder } from 'protractor';
 
-fdescribe('search a event', () => {
+xdescribe('search a event', () => {
     let searchTerm: ElementFinder;
     let searchBtn: ElementFinder;
   
