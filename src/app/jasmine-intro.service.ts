@@ -13,4 +13,12 @@ export class JasmineIntroService {
   subtractNumber(a: number, b: number) {
     return a - b;
   }
+
+  multiplyNumber(a: number, b: number){
+    return a * b;
+  }
+
+  dividedNumber(a: number, b: number){
+    return a / b;
+  }
 }
