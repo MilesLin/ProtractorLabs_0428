@@ -1,5 +1,5 @@
 import { browser, by, element, $, $$, ExpectedConditions as EC } from 'protractor';
-fdescribe('the user submit a questionnaire', () => {
+describe('the user submit a questionnaire', () => {
     it('should type information', async () => {
         await browser.get('labs/questionnaire');
         await element(by.name('username')).sendKeys('John');
