@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-fdescribe('leave add new event page', () => {
+describe('leave add new event page', () => {
 
   it('should navigate to create event page', async () => {
     await browser.get('/events/new');
