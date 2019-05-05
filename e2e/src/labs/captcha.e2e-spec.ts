@@ -1,6 +1,6 @@
 import { browser, element, by, ExpectedConditions as EC, until } from 'protractor';
 
-fdescribe('the user submit a questionnaire', () => {
+describe('the user submit a questionnaire', () => {
 
   it('should navigate to captcha page', async () => {
     await browser.get('labs/captcha');
