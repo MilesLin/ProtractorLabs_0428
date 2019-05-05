@@ -1,4 +1,4 @@
-import { browser, by, element, ElementFinder } from 'protractor';
+import { browser, by, element, ElementFinder, ExpectedConditions } from 'protractor';
 
 xdescribe('search a event', () => {
     let searchTerm: ElementFinder;
@@ -21,7 +21,9 @@ xdescribe('search a event', () => {
   
     it('should click search and pop up a modal', async () => {
       await searchBtn.click();
-      const isDisplayed = await element(by.className('modal-dialog')).isDisplayed();
+      const modal = element(by.className('modal-dialog'));
+      await browser.wait(ExpectedConditions.visibilityOf(modal), 3000);
+      const isDisplayed = await modal.isDisplayed();
       expect(isDisplayed).toBe(true);
     });
   
