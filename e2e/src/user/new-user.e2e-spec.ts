@@ -1,6 +1,6 @@
 import { browser, by, element, ExpectedConditions as EC, $, ElementFinder } from 'protractor';
 
-fdescribe('add a new user', () => {
+describe('add a new user', () => {
 
   let username: ElementFinder;
   let password: ElementFinder;
