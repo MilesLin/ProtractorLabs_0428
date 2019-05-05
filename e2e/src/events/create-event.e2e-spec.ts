@@ -1,7 +1,7 @@
 import { browser, by, element, ElementFinder } from 'protractor';
 import * as path from 'path';
 
-fdescribe('add a new event', () => {
+describe('add a new event', () => {
 
   let name: ElementFinder;
   let calendarBtn: ElementFinder;
