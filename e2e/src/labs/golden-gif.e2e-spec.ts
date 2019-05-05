@@ -1,7 +1,7 @@
 import { browser, element, by } from "protractor";
 import { addMask, compareScreenshot } from "blue-harvest";
 
-fdescribe('gif page present', () => {
+describe('gif page present', () => {
     it('should compare gif lab page', async () => {
         await browser.get('/labs/gif');
         await browser.manage().window().setSize(1024, 768);

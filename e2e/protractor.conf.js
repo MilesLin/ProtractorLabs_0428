@@ -10,6 +10,11 @@ exports.config = {
   ],
   capabilities: {
     browserName: 'chrome',
+    chromeOptions: {
+      args: [
+        "--headless"
+      ]
+    }  
   },
   SELENIUM_PROMISE_MANAGER: false,
   directConnect: true,
